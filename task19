@@ -1,0 +1,11 @@
+const { body, validationResult } = require('express-validator');
+app.post('/validate', [
+  body('email').isEmail(),
+  body('name').isLength({ min: 3 })
+], (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
+  res.send('Validation passed');
+});
