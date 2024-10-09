@@ -1,0 +1,3 @@
+app.get('/json-data', (req, res) => {
+  res.json({ data: "Here is some data" });
+});
