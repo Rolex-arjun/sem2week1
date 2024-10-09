@@ -1,0 +1,3 @@
+app.post('/echo', (req, res) => {
+  res.json(req.body); // Echoes back the JSON data
+});
