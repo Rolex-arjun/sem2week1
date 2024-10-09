@@ -1,0 +1,3 @@
+app.get('/redirect', (req, res) => {
+  res.redirect('https://www.example.com');
+});
