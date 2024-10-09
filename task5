@@ -1,0 +1,4 @@
+app.get('/greet/:name', (req, res) => {
+  const { name } = req.params;
+  res.send(`Hello, ${name}!`);
+});
