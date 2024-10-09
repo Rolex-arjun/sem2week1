@@ -1,0 +1,4 @@
+app.get('/user/:id', (req, res) => {
+  const { id } = req.params;
+  res.send(`User ID: ${id}`);
+});
