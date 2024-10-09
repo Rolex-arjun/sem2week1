@@ -1,0 +1,3 @@
+app.put('/update', (req, res) => {
+  res.send('Data updated');
+});
