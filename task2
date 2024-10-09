@@ -1,0 +1,3 @@
+app.get('/goodbye', (req, res) => {
+  res.send('Goodbye, Express!');
+});
